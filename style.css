@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(250, 114, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  position: relative;
+  height: 570px;
+  width: 500px;
+  background-color: rgb(149, 145, 145);
+  border-radius: 25px;
+}
+
+.display {
+  overflow-x: auto;
+  outline: none;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 50px;
+  left: 2.5%;
+  width: 95%;
+  height: 80px;
+  background-color: rgb(42, 42, 42);
+  border-radius: 12.5px;
+  text-align: right;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  padding: 10px 10px;
+  caret-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.display::placeholder {
+  color: #fff;
+}
+
+.display::-webkit-scrollbar {
+  display: none;
+}
+
+.display {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.buttons {
+  position: absolute;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  background-color: #353535;
+  text-align: center;
+  border-radius: 6.25px;
+}
+
+.col-gre {
+  color: yellowgreen;
+}
+
+.buttons:hover {
+  border: 2px solid white;
+}
+
+.button-7 {
+  top: 180px;
+  left: 30px;
+  position: absolute;
+}
+.button-8 {
+  top: 180px;
+  left: 115px;
+  position: absolute;
+}
+
+.button-9 {
+  top: 180px;
+  left: 200px;
+  position: absolute;
+}
+.button-div {
+  top: 180px;
+  right: 115px;
+  position: absolute;
+}
+.AC_button {
+  background-color: orange;
+  top: 180px;
+  right: 30px;
+  position: absolute;
+}
+
+.button-4 {
+  top: 270px;
+  left: 30px;
+  position: absolute;
+}
+.button-5 {
+  top: 270px;
+  left: 115px;
+  position: absolute;
+}
+
+.button-6 {
+  top: 270px;
+  left: 200px;
+  position: absolute;
+}
+.button-mul {
+  top: 270px;
+  right: 115px;
+  position: absolute;
+}
+.DEL_button {
+  top: 270px;
+  right: 30px;
+  background-color: #ffffff;
+  color: orange;
+}
+.DEL_button:hover {
+  border: 2px solid orange;
+}
+.button-mod {
+  top: 360px;
+  right: 30px;
+  position: absolute;
+}
+
+.button-1 {
+  top: 360px;
+  left: 30px;
+  position: absolute;
+}
+.button-2 {
+  top: 360px;
+  left: 115px;
+  position: absolute;
+}
+
+.button-3 {
+  top: 360px;
+  left: 200px;
+  position: absolute;
+}
+.button-add {
+  top: 450px;
+  right: 115px;
+  position: absolute;
+}
+.button-sub {
+  top: 360px;
+  right: 115px;
+  position: absolute;
+}
+
+.button-0 {
+  top: 450px;
+  left: 30px;
+  position: absolute;
+}
+.button-00 {
+  top: 450px;
+  left: 115px;
+  position: absolute;
+}
+.button-dot {
+  top: 450px;
+  left: 200px;
+  position: absolute;
+}
+
+.button-eql {
+  background-color: yellowgreen;
+  top: 450px;
+  right: 30px;
+  position: absolute;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    width: 350px;
+    height: 365px;
+  }
+
+  .display {
+    top: 25px;
+    font-size: 30px;
+    font-weight: 400;
+    height: 60px;
+    padding: 10px;
+    left: 4%;
+    width: 92%;
+  }
+
+  .buttons {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .button-7 {
+    top: 110px;
+    left: 20px;
+  }
+  .button-8 {
+    top: 110px;
+    left: 80px;
+  }
+
+  .button-9 {
+    top: 110px;
+    left: 140px;
+  }
+  .button-div {
+    top: 110px;
+    right: 80px;
+  }
+  .AC_button {
+    background-color: orange;
+    top: 110px;
+    right: 20px;
+  }
+
+  .button-4 {
+    top: 170px;
+    left: 20px;
+  }
+  .button-5 {
+    top: 170px;
+    left: 80px;
+  }
+
+  .button-6 {
+    top: 170px;
+    left: 140px;
+  }
+  .button-mul {
+    top: 170px;
+    right: 80px;
+  }
+  .button-mod {
+    top: 230px;
+    right: 20px;
+  }
+
+  .button-1 {
+    top: 230px;
+    left: 20px;
+  }
+  .button-2 {
+    top: 230px;
+    left: 80px;
+  }
+
+  .button-3 {
+    top: 230px;
+    left: 140px;
+  }
+  .DEL_button {
+    top: 170px;
+    right: 20px;
+  }
+  .button-add {
+    top: 290px;
+    right: 80px;
+  }
+  .button-sub {
+    top: 230px;
+    right: 80px;
+  }
+
+  .button-0 {
+    top: 290px;
+    left: 20px;
+  }
+  .button-00 {
+    top: 290px;
+    left: 80px;
+  }
+  .button-dot {
+    top: 290px;
+    left: 140px;
+  }
+
+  .button-eql {
+    top: 290px;
+    right: 20px;
+  }
+}
