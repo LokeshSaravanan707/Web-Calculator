@@ -6,7 +6,7 @@
 main {
   width: 100%;
   height: 100vh;
-  background-color: rgb(250, 114, 255);
+  background-color: #ff5349;
   display: flex;
   align-items: center;
   justify-content: center;
